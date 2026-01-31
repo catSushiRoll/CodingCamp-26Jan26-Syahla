@@ -12,90 +12,133 @@
 </head>
 
 <body>
-    <header class="main-header p-[8px] flex flex-col md:flex-row md:justify-between md:items-center">
-        <!-- logo -->
-        <div class="logo"></div>
+    <div class="header">
+    <!-- kalo tailwind classnya gini "header sticky top-0 bg-white z-10" -->
+        <header class="main-header p-[8px] flex flex-col md:flex-row md:justify-between md:items-center">
+            <!-- logo -->
+            <div class="logo"></div>
 
-        <!-- navbar -->
-        <nav class="flex">
-            <a class="border rounded p-2 text-center" href="#home-page">Home</a>
-            <a class="border rounded p-2 text-center" href="#our-profile-page">Our Profile</a>
-            <a class="border rounded p-2 text-center" href="#portfolio-page">Portfolio</a>
-            <a class="border rounded p-2 text-center" href="#message-us-page">Message Us</a>
-        </nav>
-    </header>
-
+            <!-- navbar -->
+            <nav class="flex flex-col md:flex-row gap-2">
+                <a class="border rounded p-2 text-center" href="#home-page">Home</a>
+                <a class="border rounded p-2 text-center" href="our_profile.html">Our Profile</a>
+                <a class="border rounded p-2 text-center" href="#portofolio-page">Portofolio</a>
+                <a class="border rounded p-2 text-center" href="#message-us-page">Message Us</a>
+            </nav>
+        </header>
+    </div>
     <hr>
     <main>
         <!-- Home page -->
-        <section id="home-page" class="min-h-[500px] text-center content-center">
-            <h1 class="text-4xl font-bold p-4">Welcome to Starseeker</h1>
-            <p class="text-lg p-4">Your journey as the dreamer to find the stars begins here.</p>
+        <section id="home-page" class="min-h-[578px] text-center content-center">
+            <p id="welcome-speech" class="text-xl text-[#EEECF0] font-medium mt-2"></p>
+            <h1 class="text-4xl text-[#EEECF0] font-bold p-4">Welcome to Starseeker</h1>
+            <p class="text-lg text-[#EEECF0] p-4">Your journey as the dreamer to find the stars begins here.</p>
         </section>
 
         <hr />
+        <!-- Stakeholder -->
+        <section id="stakeholder" class="min-h-[470px] py-12 px-8">
+            <h1 class="text-3xl font-bold text-center p-4 mb-8">Our Stakeholders</h1>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
 
-        <!-- Our Profile page -->
-        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-3xl font-bold p-4">About Starseeker</h2>
-            <p class="text-lg p-4">Learn more about who we are and what we do.</p>
+                <!-- Stakeholder 1 -->
+                <div class="stakeholder-card text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200">
+                        <img src="https://ibighit.com/public/txt/images/txt/discography/sanctuary/photo/angel/sb/ANGEL-SB-4.jpg" alt="Choi Soobin" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-lg font-bold">Choi Soobin</h3>
+                    <p class="text-gray-600">Jakarta</p>
+                </div>
+            
+                <!-- Stakeholder 2 -->
+                <div class="stakeholder-card text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200">
+                        <img src="https://ibighit.com/public/txt/images/txt/discography/sanctuary/photo/angel/th/ANGEL-TH-4.jpg" alt="Kang Taehyun" class="w- h-full object-cover">
+                    </div>
+                    <h3 class="text-lg font-bold">Kang Taehyun</h3>
+                    <p class="text-gray-600">Bandung</p>
+                </div>
+            
+                <!-- Stakeholder 3 -->
+                <div class="stakeholder-card text-center">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200">
+                        <img src="https://ibighit.com/public/txt/images/txt/discography/sanctuary/photo/angel/hk/ANGEL-HK-5.jpg" alt="Huening Kai" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-lg font-bold">Huening Kai</h3>
+                    <p class="text-gray-600">Surabaya</p>
+                </div>
+            </div>
         </section>
-
-        <hr />
-
-        <!-- Portfolio page -->
-        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-3xl font-bold p-4">Our Portfolio</h2>
-            <p class="text-lg p-4">Explore our past projects and achievements.</p>
-        </section>
-
         <hr />
 
         <!-- Message Us page -->
-        <section id="message-us-page" class="min-h-[500px] text-center content-center">
-            <header>
-            <h2 class="text-3xl font-bold p-4">Get in Touch</h2>
-            <p class="text-lg p-4">We would love to hear from you! Send us a message.</p>
+        <section id="message-us-page" class="min-h-[500px] p-8">
+            <header class="text-center mb-8">
+                <h2 class="text-3xl font-bold p-4">Get in Touch</h2>
+                <p class="text-lg p-4">We would love to hear from you! Send us a message.</p>
             </header>
-
-            <form>
-                <div class="flex items-center gap-10">
-                    <label class="block mb-2" for="name">Name:</label>
-                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
-                </div>
-
-                <div class="flex items-center gap-10">
-                    <label class="block mb-2" for="birth-date">Tanggal Lahir:</label>
-                    <input class="w-full p-2 border rounded" type="date" id="birth-date" name="date" required />
-                </div>
-
-                <div class="flex items-start gap-4">
-                <!-- Label kiri -->
-                    <label class="w-32 text-sm font-medium">Jenis Kelamin</label>
-
-                    <!-- Radio options kanan -->
-                    <div class="flex items-center gap-10">
-                        <label class="radio-label">
-                            <input type="radio" name="gender" class="radio-input" />
-                            <div class="radio-circle">
-                                <div class="radio-dot"></div>
+        
+            <div class="flex flex-col md:flex-row gap-6 max-w-6xl mx-auto">
+                <!-- Form Container (Kiri) -->
+                <div class="w-full md:w-1/2 border-2 border-gray-300 rounded-lg p-6 bg-white shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Message Us</h3>
+                    <form id="contactForm" class="space-y-4" onsubmit="submitMessage(event)">
+                        <div>
+                            <label class="block mb-2 font-medium" for="name">Name:</label>
+                            <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
+                        </div>
+                    
+                        <div>
+                            <label class="block mb-2 font-medium" for="email">Email:</label>
+                            <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
+                        </div>
+                    
+                        <div>
+                            <label class="block mb-2 font-medium" for="birth-date">Birth Date:</label>
+                            <input class="w-full p-2 border rounded" type="date" id="birth-date" name="date" required />
+                        </div>
+                    
+                        <div>
+                            <label class="block mb-2 font-medium">Gender</label>
+                            <div class="flex gap-4">
+                                <label class="flex items-center gap-2">
+                                    <input type="radio" name="gender" value="Male" required />
+                                    <span>Male</span>
+                                </label>
+                                <label class="flex items-center gap-2">
+                                    <input type="radio" name="gender" value="Female" required />
+                                    <span>Female</span>
+                                </label>
                             </div>
-                            <span class="radio-text">Laki-laki</span>
-                        </label>
-
-                        <label class="radio-label">
-                            <input type="radio" name="gender" class="radio-input" />
-                            <div class="radio-circle">
-                                <div class="radio-dot"></div>
-                            </div>
-                            <span class="radio-text">Perempuan</span>
-                        </label>
+                        </div>
+                    
+                        <div>
+                            <label class="block mb-2 font-medium" for="message">Message:</label>
+                            <textarea class="w-full p-2 border rounded" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                    
+                        <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            
+                <!-- Result Container (Kanan) - Hidden by default -->
+                <div id="resultContainer" class="w-full md:w-1/2 border-2 border-gray-300 rounded-lg p-6 bg-gray-50 shadow-md hidden">
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-600">Current time: <span id="currentTime"></span></p>
+                    </div>
+                    <div class="space-y-2">
+                        <p><strong>Name:</strong> <span id="resultName"></span></p>
+                        <p><strong>Email:</strong> <span id="resultEmail"></span></p>
+                        <p><strong>Birth:</strong> <span id="resultDate"></span></p>
+                        <p><strong>Gender:</strong> <span id="resultGender"></span></p>
+                        <p><strong>Message:</strong> <span id="resultMessage"></span></p>
                     </div>
                 </div>
-
-            </form>
+            </div>
         </section>
-
     </main>
     <footer></footer>
 

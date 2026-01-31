@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Starseeker</title>
+
+    <!-- CSS external -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- use Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="header sticky top-0 bg-white z-10 shadow-md">
+        <header class="main-header p-[8px] flex flex-col md:flex-row md:justify-between md:items-center">
+            <!-- logo -->
+            <div class="logo mb-4 md:mb-0"></div>
+
+            <!-- navbar -->
+            <nav class="flex flex-col md:flex-row gap-2">
+                <a class="border rounded p-2 text-center" href="index.html">Home</a>
+                <a class="border rounded p-2 text-center" href="our_profile.html">Our Profile</a>
+                <a class="border rounded p-2 text-center" href="portfolio.html">Portfolio</a>
+                <a class="border rounded p-2 text-center" href="index.html#message-us-page">Message Us</a>
+            </nav>
+        </header>
+    </div>
+    <hr>
+
+    <main>
+        <!-- Portfolio page -->
+        <section id="portfolio-page" class="min-h-[500px] py-12 px-8">
+            <!-- Header tetap di tengah -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold p-4">Our Portfolio</h2>
+                <p class="text-lg p-4">Explore our past projects and achievements.</p>
+            </div>
+            
+            <!-- Content aligned left -->
+            <div class="max-w-4xl mx-auto text-left space-y-8">
+                <div class="portfolio-item">
+                    <h3 class="text-2xl font-bold mb-2">The Magic Island</h3>
+                    <p class="text-base text-gray-700">A workshop series teaching about science and ecological responsibility.</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <h3 class="text-2xl font-bold mb-2">Find the Tomorrow</h3>
+                    <p class="text-base text-gray-700">A section where we could improve our soft-skills and leadership from professionals.</p>
+                </div>
+
+                <div class="mt-12">
+                    <p class="text-gray-500 italic">More to come...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- JS external -->
+    <script src="js/script.js"></script>
+</body>
+</html>

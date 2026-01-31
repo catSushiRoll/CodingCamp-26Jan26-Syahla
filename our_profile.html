@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Profile - Starseeker</title>
+
+    <!-- CSS external -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- use Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="header">
+    <!-- kalo tailwind classnya gini "header sticky top-0 bg-white z-10" -->
+        <header class="main-header p-[8px] flex flex-col md:flex-row md:justify-between md:items-center">
+            <!-- logo -->
+            <div class="logo"></div>
+
+            <!-- navbar -->
+            <nav class="flex flex-col md:flex-row gap-2">
+                <a class="border rounded p-2 text-center" href="index.html">Home</a>
+                <a class="border rounded p-2 text-center" href="#our-profile-page">Our Profile</a>
+                <a class="border rounded p-2 text-center" href="portofolio.html">Portofolio</a>
+                <a class="border rounded p-2 text-center" href="index.html#message-us-page">Message Us</a>
+            </nav>
+        </header>
+    </div>
+    <hr>
+
+    <main>
+        <!-- Our Profile page -->
+        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-3xl font-bold p-4">About Starseeker</h2>
+            <p class="text-lg p-4"> Starseeker Education & Development Center is an educational 
+                organization dedicated to supporting students in their learning and personal development journey.
+                We believe that every dreamer carries a unique spark that defines their potential.
+                Inspired by the resilience of those who navigate the night sky to find their destiny, we provide the tools, 
+                mentorship, and environment needed to turn curiosity into mastery.
+            </p>
+            <div class="max-w-4xl mx-auto mt-8">
+            <h3 class="text-3xl font-bold p-4">Our Mission</h3>
+            <p>To empower the next generation of dreamers and doers through holistic learning, helping them 
+                navigate the complexities of the modern world with the precision of a celestial navigator.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- JS external -->
+    <script src="js/script.js"></script>
+</body>
+</html>
